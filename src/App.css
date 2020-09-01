@@ -1,5 +1,35 @@
+body {
+  background: yellowgreen;
+}
+
 .App {
+  background: yellowgreen;
+  height: 100vh;
+  padding: 2%;
   text-align: center;
+}
+
+#heading {
+  font-size: 45px;
+  font-weight: 600;
+  text-shadow: 1px 1px 4px #217c36;
+}
+
+.board {
+  background: #6f9e3c;
+  display: inline-flex;
+  height: 80%;
+  width: 90%;
+  margin-top: 3%;
+  box-shadow: 5px 5px 10px #1d542a;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+@media (max-width: 450px) {
+  .board {
+    flex-direction: column;
+  }
 }
 
 .App-logo {

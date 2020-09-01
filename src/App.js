@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import List from './components/List'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span id="heading">Trello </span>
+      <img src={require("./todo.png")} height="40px"></img>
+      <br/>
+      <div className="board">
+        <List title="To Do"/>
+        <List title="Doing"/>
+        <List title="Completed"/> 
+      </div>
     </div>
   );
 }
